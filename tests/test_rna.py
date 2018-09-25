@@ -1,4 +1,4 @@
-from  rna import RNA
+from Genomics_demo.rna import RNA
 import pytest
 def test_bad_sequence_raises_error():
 
@@ -6,8 +6,8 @@ def test_bad_sequence_raises_error():
         RNA('ATB')
 def test_bad_sequence_raises_works():
 
-     assert DNA('GUC').complimentary_sequence == DNA('CAG')
-     assert DNA('AUC').complimentary_sequence == DNA('UAG')
+     assert RNA('GUC').complimentary_sequence == RNA('CAG')
+     assert RNA('AUC').complimentary_sequence == RNA('UAG')
 
 
 print('it worked')

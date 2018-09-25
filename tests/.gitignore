@@ -1,0 +1,6 @@
+build
+dist
+.pytest cache
+genomics demo.egg_info
+.idea
+__pycache__
