@@ -13,4 +13,5 @@ pip install git+https://github.com/lifischer/Genomics_workshop_demo
 from genomics_demo import DNA
 dna_strand = DNA('AGTCAGC') # make DNA seq
 dna_strand.complimentary_sequence # outputs "TCAGTCG'
-``
+```
+
