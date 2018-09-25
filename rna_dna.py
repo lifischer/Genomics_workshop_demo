@@ -1,4 +1,4 @@
-complimentary_nucleotides = {'A': 'U', 'U': 'A', 'C': 'G', 'G': 'C'}
+#complimentary_nucleotides = {'A': 'U', 'U': 'A', 'C': 'G', 'G': 'C'}
 
 
 
@@ -21,9 +21,18 @@ class RNA:
         are_good = (nucleotide.upper() in 'GCAU' for nucleotide in self.sequence)
         return True if all(are_good) else False
 
-    @property
-    def complimentary_sequence(self):
-        return RNA(''.join(complimentary_nucleotides[nt.upper()] for nt in self.sequence))
+rna = ""
+
+for i in rna:
+    # Replace all occurrences of T with U
+    if i == "U":
+       dna += "T"
+    else:
+       dna += i
+
+#    @property
+ #   def complimentary_sequence(self):
+  #      return DNA(''.join(complimentary_nucleotides[nt.upper()] for nt in self.sequence))
 
 
 print('it worked')
